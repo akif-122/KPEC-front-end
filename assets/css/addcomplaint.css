@@ -1,9 +1,10 @@
 .complaint {
-  padding-top: 10px;
+  padding-top: 8px;
+  margin-top: 20px !important;
 }
 
 .complaint .go-back-link {
-  padding-left: 50px;
+  padding-left: 18px;
 }
 .complaint .go-back-link a {
   color: #677788;
@@ -18,22 +19,27 @@
 .complaint h2 {
   font-weight: 700;
   line-height: 1.1;
-  font-size: 36px;
+  font-size: 38px;
   color: #516377;
-  margin: 20px 0;
+  margin: 5px 0;
+  padding-left: 15px;
 }
 .complaint h2 span {
   color: var(--green);
 }
 .complaint h5 {
   margin-bottom: 20px;
-  font-size: 18px;
+  margin-top: 12px;
+  font-size: 22px;
+  margin-left: 13px;
 }
-
+.complaint form {
+  margin-top: 45px;
+}
 .complaint form label {
   font-weight: 500;
 }
-.complaint form textarea,
+/* .complaint form textarea,
 .complaint form select,
 .complaint form input:not([type="radio"]) {
   border-radius: 15px;
@@ -50,12 +56,55 @@
   border: 1px solid;
   border-color: #b9b9b9;
   padding: 10px;
-}
+  } */
 .complaint form select:focus,
 .complaint form textarea:focus,
 .complaint form input:focus {
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
   border-color: #b9b9b9;
+}
+
+.complaint form textarea {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 16px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+  color: #000 !important;
+  -webkit-backdrop-filter: blur(5.1px);
+  height: 122px;
+}
+
+.complaint form input:not([type="radio"]) {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 16px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+  color: #000 !important;
+  -webkit-backdrop-filter: blur(5.1px);
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.complaint form select{
+  border-radius: 16px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+  color: #000 !important;
+  -webkit-backdrop-filter: blur(5.1px);
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.complaint .form-check-input {
+  width: 18px;
+  height: 18px;
+  margin-top: 0.035em;
+    vertical-align: top;
+}
+.form-check{
+  margin-bottom: 0.125rem;
+}
+.complaint .form-check-input:checked[type="radio"] {
+  background-color: #00845a;
+  border-color: #00845a;
 }
 
 .cmp-btn {
@@ -67,9 +116,10 @@
   font-weight: bold;
   font-size: 15px;
   border-radius: 6px;
-  width: 270px;
+  /* width: 270px; */
   padding: 8px;
   transition: 0.5s ease;
+  margin-top: 50px;
 }
 
 .cmp-btn:hover {

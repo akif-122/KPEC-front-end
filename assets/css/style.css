@@ -47,19 +47,56 @@ ul {
   font-size: 18px;
 }
 
+.header .kp-logo{
+  width: 100px;
+}
+.header .logo{
+  width: 180px;
+}
+.header .nha-logo{
+  width: 100px;
+}
+
+@media (max-width:767px){
+  .header .kp-logo{
+    width: 70px;
+  }
+  .header .logo{
+    width: 150px;
+  }
+  .header .nha-logo{
+    width: 70px;
+  }
+}
+
+@media (max-width:575px){
+  .header .kp-logo{
+    width: 50px;
+  }
+  .header .logo{
+    width: 100px;
+  }
+  .header .nha-logo{
+    width: 50px;
+  }
+}
+
 /* HEADER SECTION EDN */
 
 /* HOME PAGE CSS */
 .main-section {
-  width: calc(100% - 150px);
-  margin: 0 auto;
+  width: calc(100% - 140px);
   margin-top: 100px;
   margin: 20px auto;
+  margin-top: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
-  padding: 48px;
+  padding: 48px 13px 0;
 }
-
+.main-text-eng {
+  padding: 20px;
+  padding-left: 5px;
+}
 .main-text-eng h4 {
   font-size: 22px;
   font-weight: 500;
@@ -69,6 +106,7 @@ ul {
 .main-text-eng p {
   font-size: 15px;
   margin-bottom: 16px;
+  line-height: 1.46;
 }
 
 .lists .item {
@@ -79,17 +117,20 @@ ul {
 .lists .item span {
   width: 120px;
   text-align: right;
-  padding-right: 20px;
+  padding-right: 10px;
   font-size: 15px;
 }
 .lists .item strong {
   width: calc(100% - 120px);
   font-weight: 600;
   font-size: 13px;
+  line-height: 1.5;
 }
 
 .main-text-urdu {
   text-align: right;
+  padding: 20px;
+  padding-right: 0;
 }
 
 .main-text-urdu .lists .item {
@@ -97,18 +138,33 @@ ul {
 }
 
 .main-text-urdu h5 {
-  margin-top: 10px;
-  margin-bottom: 30px;
+  text-align: right;
+  font-family: sans-serif !important;
+  font-size: 1rem;
+  margin: 10px 0 30px 0;
+  font-weight: 700 !important;
 }
-
+.main-text-urdu p{
+  margin: 40px 0;
+  line-height: 2.5;
+  font-size: 0.9rem;
+}
+.main-text-urdu .lists span{
+  width: 85px;
+  line-height: 1.5;
+}
 .main-btns ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   list-style: none;
-  gap: 10px;
-  padding-left: 0;
+  padding-left: 12px;
+  margin-top: 30px;
+  /* margin-bottom: 16px; */
+}
+.main-btns ul li {
+  margin: 10px;
 }
 .main-btns ul li .m-btn {
   display: flex;
@@ -135,6 +191,10 @@ ul {
 .main-btns ul li .m-btn .text-urdu {
   font-size: 11px;
   margin-top: 5px;
+}
+
+.middle-img img {
+  max-width: 100%;
 }
 
 @media (max-width: 1199px) {
@@ -192,6 +252,15 @@ ul {
 .trackModal .modal-dialog .modal-content {
   padding: 48px;
 }
+.trackModal .modal-dialog .modal-content .logos .kp-logo{
+  width: 80px;
+}
+.trackModal .modal-dialog .modal-content .logos .logo{
+  width: 120px;
+}
+.trackModal .modal-dialog .modal-content .logos .nha-logo{
+  width: 80px;
+}
 .trackModal .modal-dialog .modal-content h2 {
   font-size: 22px;
 }
@@ -233,6 +302,21 @@ ul {
 @media (max-width: 767px) {
   .trackModal .modal-dialog .modal-content {
     padding: 30px 10px;
+  }
+}
+
+@media (max-width: 575px){
+  .trackModal .modal-dialog .modal-content .logos .kp-logo{
+    width: 50px;
+  }
+  .trackModal .modal-dialog .modal-content .logos .logo{
+    width: 90px;
+  }
+  .trackModal .modal-dialog .modal-content .logos .nha-logo{
+    width: 50px;
+  }
+  .modal-body{
+    padding: 10px;
   }
 }
 

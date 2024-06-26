@@ -33,9 +33,15 @@
             </div>
 
             <!-- {/* LOGO SECTION */} -->
-            <div class="text-center my-3">
+            <div class="text-center d-flex justify-content-around align-items-center">
                 <a href="/index.html">
-                    <img src="./assets/imgs/logo.png" width='180' alt="" />
+                    <img src="./assets/imgs/kpk.png" class="kp-logo" alt="" />
+                </a>
+                <a href="/index.html">
+                    <img src="./assets/imgs/logo.png" class="logo" alt="" />
+                </a>
+                <a href="/index.html">
+                    <img src="./assets/imgs/nha.jpeg" class="nha-logo" alt="" />
                 </a>
             </div>
 
@@ -44,224 +50,229 @@
 
 
         <div class="main-section mt-4 complaint">
-            <div class="go-back-link">
-                <a href="/index.html">
-                    <i class="fa-solid fa-angle-left me-2"></i> Back
-                </a>
-            </div>
-            <h2 class='text-center'>Add New <span>Complaint</span></h2>
-            <h5 class='text-center'>نئی شکایت شامل کریں</h5>
-
-            <form action="">
-                <div class="row">
-
-                    <div class="col-lg-6 mb-4 mb-lg-5">
-                        <div class="form-group ">
-                            <label for="">Name نام</label>
-                            <input type="text" class='form-control' />
-                        </div>
-
-                        <div class="radio-boxes mb-3">
-
-                            <label for="" class='pl-0 pb-3'>Gender صنف</label><br />
-
-                            <div class="form-check form-check-inline">
-                                <input type="radio" class='form-check-input' name='gender' id='male' />
-                                <label for="male" class='form-check-label'>Male</label>
-                            </div>
-
-                            <div class="form-check form-check-inline">
-                                <input type="radio" class='form-check-input' name='gender' id='female' />
-                                <label for="female" class='form-check-label'>Female</label>
-                            </div>
-
-                            <div class="form-check form-check-inline">
-                                <input type="radio" class='form-check-input' name='gender' id='other' />
-                                <label for="other" class='form-check-label'>Other</label>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-6 mb-4 mb-lg-5">
-                        <div class="form-group">
-                            <label for="">Address پتہ</label>
-                            <textarea name="" id="" rows="5" class='form-control'></textarea>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mb-4 mb-lg-5">
-                        <div class="form-group mb-3">
-                            <label for="">National Identification Number (CNIC) قومی شناختی نمبر</label>
-                            <input type="text" class='form-control' placeholder='00000000000000' />
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mb-4 mb-lg-5">
-                        <div class="form-group mb-3">
-                            <label for="">Village/UC گاؤں</label>
-                            <input type="text" class='form-control' />
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mb-4 mb-lg-5">
-                        <div class="form-group mb-3">
-                            <label for="">Cell Number فون نمبر</label>
-                            <input type="number" class='form-control' placeholder='0343400****' />
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mb-4 mb-lg-5">
-                        <div class="form-group mb-3">
-                            <label for="">Tehsil * تحصیل</label>
-                            <input type="text" class='form-control' />
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-6 mb-4 mb-lg-5">
-                        <div class="form-group mb-3">
-                            <label for="">Email ای میل</label>
-                            <input type="email" class='form-control' />
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mb-4 mb-lg-5">
-                        <div class="form-group mb-3">
-                            <label for="">District * ضلع</label>
-                            <select name="" id="" class='form-select'>
-                                <option value="">Select Distric</option>
-                                <option value="">Charsadda</option>
-                                <option value="">Peshawar</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mb-4 mb-lg-5">
-                        <label for="" class='mb-3'>کیا آپ نے پہلے یہ شکایت کسی دوسرے محکمے کو جمع کروائی تھی؟
-                            <br />
-                            Did you previously discussed OR Submit this complaint to any other department?</label>
-                        <br />
-
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class='form-check-input' name="prev-discuss" id="prev-discuss-yes" />
-                            <label for="prev-discuss-yes" class='form-check-label'>Yes ہاں</label>
-                        </div>
-
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class='form-check-input' name="prev-discuss" checked
-                                id="prev-discuss-no" />
-                            <label for="prev-discuss-no" class='form-check-label'>No نہیں</label>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-6 mb-4 mb-lg-5">
-                        <label for="" class='mb-3'>
-                            * کیا آپ اپنی ذاتی تفصیلات کو خفیہ رکھنا چاہتے ہیں؟
-                            <br />Do you want to keep your personal detals confidential? *
-                        </label>
-                        <br />
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class='form-check-input' name="keep-data" id="keep-data-yes" />
-                            <label for="keep-data-yes" class='form-check-label'>Yes ہاں</label>
-                        </div>
-
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class='form-check-input' name="keep-data" checked id="keep-data-no" />
-                            <label for="keep-data-no" class='form-check-label'>No نہیں</label>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-6 mb-4 mb-lg-5">
-                        <label for="" class='mb-3'>
-                            جواب حاصل کرنے کا سب سے مؤثر طریقہ
-                            <br /> Most effective mean to recieve Response (Please tick)
-                        </label>
-                        <br />
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class='form-check-input' checked name="response" id="post" />
-                            <label for="post" class='form-check-label'>Post پوسٹ</label>
-                        </div>
-
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class='form-check-input' name="response" id="email" />
-                            <label for="email" class='form-check-label'>Email ای میل</label>
-                        </div>
-
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class='form-check-input' name="response" id="phone" />
-                            <label for="phone" class='form-check-label'>Phone/SMS فون</label>
-                        </div>
-
-                    </div>
-
-
-
-
-                    <div class="col-lg-6 mb-4 mb-lg-5">
-                        <label for="" class='mb-3'>
-                            * آپ کس سے شکایت کرنا چاہتے ہیں؟
-                            <br /> Who do you want to submit complaint? *
-                        </label>
-                        <br />
-                        <div class="form-check form-check">
-                            <input type="radio" class='form-check-input' name="complaint" id="nha" />
-                            <label for="nha" class='form-check-label'>National Highway Authority</label>
-                        </div>
-
-                        <div class="form-check form-check">
-                            <input type="radio" class='form-check-input' checked name="complaint" id="pad" />
-                            <label for="pad" class='form-check-label'>Planning and Development Department Khyber
-                                Pakhtunkhwa</label>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-6 mb-4 mb-lg-5">
-                        <div class="form-group mb-3">
-                            <label for="">Category * زمرہ منتخب کریں</label>
-                            <select name="" id="" class='form-select'>
-                                <option value="">Lnad Related Issue</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mb-4 mb-lg-5">
-                        <div class="form-group mb-3">
-                            <label for="">Attachments منسلکات</label>
-                            <input type="file" class='form-control' />
-                        </div>
-                    </div>
-
-                    <div class="col-12 mb-4">
-                        <div class="form-group mb-3">
-                            <label for="">Complaint Title * شکایت کا عنوان</label>
-                            <input type="text" class='form-control' />
-                        </div>
-                    </div>
-
-                    <div class="col-12 mb-4">
-                        <div class="form-group mb-3">
-                            <label for="">Complaint Details * شکایت کی تفصیل</label>
-                            <textarea name="" id="" rows="8" class='form-control'></textarea>
-                        </div>
-                    </div>
-
-                    <div class="d-grid">
-                        <button class='cmp-btn '>Submit Complaint</button>
-                    </div>
-
-
-
+            <div class="col-md-12 col-lg-11 col-xl-10 mx-auto">
+                <div class="go-back-link">
+                    <a href="/index.html">
+                        <i class="fa-solid fa-angle-left me-2"></i> Back
+                    </a>
                 </div>
+                <h2 class='text-center'>Add New <span>Complaint</span></h2>
+                <h5 class='text-center'>نئی شکایت شامل کریں</h5>
+
+                <form action="">
+                    <div class="row">
+
+                        <div class="col-lg-6 mb-3 px-2">
+                            <div class="form-group ">
+                                <label for="">Name نام</label>
+                                <input type="text" class='form-control' />
+                            </div>
+
+                            <div class="radio-boxes mb-3">
+
+                                <label for="" class='pl-0 pb-3'>Gender صنف</label><br />
+
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class='form-check-input' checked name='gender' id='male' />
+                                    <label for="male" class='form-check-label'>Male</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class='form-check-input' name='gender' id='female' />
+                                    <label for="female" class='form-check-label'>Female</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class='form-check-input' name='gender' id='other' />
+                                    <label for="other" class='form-check-label'>Other</label>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-6 mb-3 px-2 ps-lg-4">
+                            <div class="form-group">
+                                <label for="">Address پتہ</label>
+                                <textarea name="" id="" rows="5" class='form-control'></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mb-3 px-2">
+                            <div class="form-group ">
+                                <label for="">National Identification Number (CNIC) قومی شناختی نمبر</label>
+                                <input type="text" class='form-control' placeholder='00000000000000' />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mb-3 px-2 ps-lg-4">
+                            <div class="form-group ">
+                                <label for="">Village/UC گاؤں</label>
+                                <input type="text" class='form-control' />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mb-3 px-2">
+                            <div class="form-group ">
+                                <label for="">Cell Number فون نمبر</label>
+                                <input type="number" class='form-control' placeholder='0343400****' />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mb-3 px-2 ps-lg-4">
+                            <div class="form-group ">
+                                <label for="">Tehsil * تحصیل</label>
+                                <input type="text" class='form-control' />
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-6 mb-3 px-2 ">
+                            <div class="form-group ">
+                                <label for="">Email ای میل</label>
+                                <input type="email" class='form-control' />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mb-3 px-2 ps-lg-4">
+                            <div class="form-group ">
+                                <label for="">District * ضلع</label>
+                                <select name="" id="" class='form-select'>
+                                    <option value="">Select Distric</option>
+                                    <option value="">Charsadda</option>
+                                    <option value="">Peshawar</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 my-lg-4 my-3 px-2 ">
+                            <label for="" class='mb-3'>کیا آپ نے پہلے یہ شکایت کسی دوسرے محکمے کو جمع کروائی تھی؟
+                                <br />
+                                Did you previously discussed OR Submit this complaint to any other department?</label>
+                            <br />
+
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class='form-check-input' name="prev-discuss"
+                                    id="prev-discuss-yes" />
+                                <label for="prev-discuss-yes" class='form-check-label'>Yes ہاں</label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class='form-check-input' name="prev-discuss" checked
+                                    id="prev-discuss-no" />
+                                <label for="prev-discuss-no" class='form-check-label'>No نہیں</label>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-6 my-lg-4 my-3 px-2 ps-lg-4">
+                            <label for="" class='mb-3'>
+                                * کیا آپ اپنی ذاتی تفصیلات کو خفیہ رکھنا چاہتے ہیں؟
+                                <br />Do you want to keep your personal detals confidential? *
+                            </label>
+                            <br />
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class='form-check-input' name="keep-data" id="keep-data-yes" />
+                                <label for="keep-data-yes" class='form-check-label'>Yes ہاں</label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class='form-check-input' name="keep-data" checked
+                                    id="keep-data-no" />
+                                <label for="keep-data-no" class='form-check-label'>No نہیں</label>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-6 my-lg-4 my-3 px-2">
+                            <label for="" class='mb-3'>
+                                جواب حاصل کرنے کا سب سے مؤثر طریقہ
+                                <br /> Most effective mean to recieve Response (Please tick)
+                            </label>
+                            <br />
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class='form-check-input' checked name="response" id="post" />
+                                <label for="post" class='form-check-label'>Post پوسٹ</label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class='form-check-input' name="response" id="email" />
+                                <label for="email" class='form-check-label'>Email ای میل</label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class='form-check-input' name="response" id="phone" />
+                                <label for="phone" class='form-check-label'>Phone/SMS فون</label>
+                            </div>
+
+                        </div>
 
 
 
-            </form>
 
+                        <div class="col-lg-6 my-lg-4 my-3 px-2 ps-lg-4">
+                            <label for="" class='mb-3'>
+                                * آپ کس سے شکایت کرنا چاہتے ہیں؟
+                                <br /> Who do you want to submit complaint? *
+                            </label>
+                            <br />
+                            <div class="form-check form-check">
+                                <input type="radio" class='form-check-input' name="complaint" id="nha" />
+                                <label for="nha" class='form-check-label'>National Highway Authority</label>
+                            </div>
+
+                            <div class="form-check form-check">
+                                <input type="radio" class='form-check-input' checked name="complaint" id="pad" />
+                                <label for="pad" class='form-check-label'>Planning and Development Department Khyber
+                                    Pakhtunkhwa</label>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-6 mb-3 px-2">
+                            <div class="form-group ">
+                                <label for="">Category * زمرہ منتخب کریں</label>
+                                <select name="" id="" class='form-select'>
+                                    <option value="">Lnad Related Issue</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mb-3 px-2 ps-lg-4">
+                            <div class="form-group ">
+                                <label for="">Attachments منسلکات</label>
+                                <input type="file" class='form-control' />
+                            </div>
+                        </div>
+
+                        <div class="col-12 mb-4">
+                            <div class="form-group ">
+                                <label for="">Complaint Title * شکایت کا عنوان</label>
+                                <input type="text" class='form-control' />
+                            </div>
+                        </div>
+
+                        <div class="col-12 mb-4">
+                            <div class="form-group ">
+                                <label for="">Complaint Details * شکایت کی تفصیل</label>
+                                <textarea name="" id="" rows="8" class='form-control'></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4 mx-auto">
+                                <button class='cmp-btn  w-100 d-block'>Submit Complaint</button>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </form>
+            </div>
         </div>
     </div>
 
